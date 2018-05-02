@@ -1,14 +1,32 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div>
+    <!--<app-counter />-->
+    <!--<hr/>-->
+    <!--<app-result></app-result>-->
+    <!--<hr/>-->
+    <!--<app-anotherresult />-->
+    <!--<app-anothercounter />-->
+    <home />
+
   </div>
 </template>
 
 <script>
 
+// import counter from './components/counter'
+// import result from './components/result'
+// import anotherresult from './components/anotherresult'
+// import anothercounter from './components/anothercounter'
+
+import home from './components/home'
 export default {
-  name: 'App'
+  components: {
+    // counter,
+    // result,
+    // anotherresult,
+    // anothercounter
+    home
+  }
 }
 </script>
 

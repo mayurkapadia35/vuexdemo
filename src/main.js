@@ -5,21 +5,16 @@ import { store } from './store/store'
 import Vuex from 'vuex'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import 'material-design-icons-iconfont/dist/material-design-icons.min.css'
+import leftbar from './components/leftbar'
+import middlecontent from './components/content'
 
-// import counter from './components/counter'
-// import result from './components/result'
-// import anotherresult from './components/anotherresult'
-// import anothercounter from './components/anothercounter'
 import home from './components/home'
 
 Vue.config.productionTip = false
 Vue.use(Vuex)
 Vue.use(Vuetify)
-// Vue.component('app-counter', counter)
-// Vue.component('app-result', result)
-// Vue.component('app-anotherresult', anotherresult)
-// Vue.component('app-anothercounter', anothercounter)
+Vue.component('app-leftbar', leftbar)
+Vue.component('app-content', middlecontent)
 
 Vue.component('home', home)
 new Vue({

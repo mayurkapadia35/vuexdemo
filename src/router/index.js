@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import counter from '../components/counter'
 import home from '../components/home'
 
 Vue.use(Router)
@@ -8,7 +7,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '',
       name: 'home',
       component: home,
       mode: 'history'
